@@ -4,8 +4,20 @@ Upstream-Contact: Neal H. Walfield <neal@pep.foundation>
 Source: https://gitlab.com/sequoia-pgp/sequoia-policy-config
 
 Files: *
-Copyright: 2022-2023 Neal H. Walfield <neal@pep.foundation>
+Copyright: FIXME (overlay) UNKNOWN-YEARS Neal H. Walfield <neal@pep.foundation>
 License: LGPL-2.0-or-later
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: LICENSE.txt
+Copyright: 1991 Free Software Foundation, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
 
 Files: debian/*
 Copyright:
