@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
-
 %:
-	dh $@
+	dh $@ --buildsystem cargo
+
+# broken, since a plain `cargo build` requires enabling a feature on the
+# sequoia-openpgp dependency..
+override_dh_auto_test:

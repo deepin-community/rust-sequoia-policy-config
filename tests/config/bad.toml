@@ -1,0 +1,3 @@
+[hash_algorithms]
+sha1 = "always"
+sha42 = "never"

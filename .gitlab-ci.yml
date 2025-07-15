@@ -1,0 +1,7 @@
+stages:
+  - pre-check
+  - build
+  - test
+
+include:
+  - component: "gitlab.com/sequoia-pgp/common-ci/sequoia-pipeline@main"

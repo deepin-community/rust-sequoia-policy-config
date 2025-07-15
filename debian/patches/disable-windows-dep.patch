@@ -1,0 +1,20 @@
+Remove Windows dependencies: we are building only for debian
+
+Index: sequoia-policy-config/Cargo.toml
+===================================================================
+--- sequoia-policy-config.orig/Cargo.toml
++++ sequoia-policy-config/Cargo.toml
+@@ -71,13 +71,5 @@ features = [
+ ]
+ default-features = false
+ 
+-[target."cfg(windows)".dev-dependencies.sequoia-openpgp]
+-version = "2"
+-features = [
+-    "crypto-cng",
+-    "__implicit-crypto-backend-for-tests",
+-]
+-default-features = false
+-
+ [badges.maintenance]
+ status = "actively-developed"

@@ -1,0 +1,14 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test sequoia-policy-config 0.8.0 --all-targets --all-features
+Features: test-name=rust-sequoia-policy-config:@
+Depends: dh-cargo (>= 31), rustc (>= 1.70), librust-assert-cmd-2+default-dev, librust-quickcheck-1-dev, librust-sequoia-openpgp-2+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-2+crypto-nettle-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test sequoia-policy-config 0.8.0 --all-targets
+Features: test-name=librust-sequoia-policy-config-dev:default
+Depends: dh-cargo (>= 31), rustc (>= 1.70), librust-assert-cmd-2+default-dev, librust-quickcheck-1-dev, librust-sequoia-openpgp-2+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-2+crypto-nettle-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test sequoia-policy-config 0.8.0 --all-targets --no-default-features
+Features: test-name=librust-sequoia-policy-config-dev:
+Depends: dh-cargo (>= 31), rustc (>= 1.70), librust-assert-cmd-2+default-dev, librust-quickcheck-1-dev, librust-sequoia-openpgp-2+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-2+crypto-nettle-dev, @
+Restrictions: allow-stderr, skip-not-installable
